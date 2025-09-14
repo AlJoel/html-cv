@@ -3,10 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Estudiante Estudioso - CV</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eee;
+        }
+
+        .cv {
+            width: 800px;
+            margin: 20px auto;
+            background: white;
+            display: flex;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        aside {
+            width: 250px;
+            background-color: #002b5c;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        aside h2 {
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 5px;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+            box-sizing: border-box;
+            background: white;
+            color: #222;
+        }
+        .foto-cv{
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header h2 {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #004080;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .fecha-trabajo {
+            float: right;
+            font-size: 12px;
+            color: #004080;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+
 </head>
 <body>
     <div class="cv">
         <aside>
+            <img src="./foto.jpg" alt="foto-cv" class="foto-cv">
             <h2>CONTACTO</h2>
             <p>correoelectronico@gmail.com</p>
             <p>123456789</p>
@@ -51,7 +148,7 @@
             <section>
                 <h2>EXPERIENCIA</h2>
 
-                <h3>Desarrollador Full Stack - TechSolutions <span class="job-date">Mar 2022 – Actualidad</span></h3>
+                <h3>Desarrollador Full Stack - TechSolutions <span class="fecha-trabajo">Mar 2022 – Actualidad</span></h3>
                 <ul>
                     <li>Desarrollo de sistemas en PHP y MySQL</li>
                     <li>Implementación de interfaces interactivas usando JavaScript puro y jQuery</li>
@@ -60,7 +157,7 @@
                     <li>Trabajo en conjunto con diseñadores y testers</li>
                 </ul>
 
-                <h3>Desarrollador Web Jr. - WebFactory <span class="job-date">Ene 2020 – Feb 2022</span></h3>
+                <h3>Desarrollador Web Jr. - WebFactory <span class="fecha-trabajo">Ene 2020 – Feb 2022</span></h3>
                 <ul>
                     <li>Mantenimiento de sitios en PHP y HTML</li>
                     <li>Soporte a clientes y resolución de problemas técnicos</li>
